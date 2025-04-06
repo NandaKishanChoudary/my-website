@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nk.27</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    body {
+      font-family: "Poppins";
+      margin: 0;
+      scroll-behavior: unset;
+    }
+
+    nav.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      flex-wrap: wrap;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .navbar ul li a {
+      color: rgb(18, 17, 17);
+      text-decoration: none;
+    }
+
+    section {
+      padding: 80px 30px;
+      min-height: 100vh;
+    }
+
+    #Home, #About, #Projects, #Contact, #Achievements {
+      background-color: rgb(14, 14, 14);
+      color: white;
+    }
+
+    .bars-animation {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .bar {
+      width: 10px;
+      height: 50px;
+      margin: 0 5px;
+      background: #000000;
+      animation: bounce 1s infinite ease-in-out;
+      animation-delay: calc(var(--i) * 0.1s);
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: scaleY(1);
+      }
+      50% {
+        transform: scaleY(2);
+      }
+    }
+
+    .home {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .home-info, .home-img {
+      flex: 1 1 300px;
+    }
+
+    .img-box img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .btn-sci .sci a {
+      font-size: 24px;
+      margin-right: 15px;
+      color: white;
+    }
+
+    /* ✅ Responsive styles only */
+    @media (max-width: 768px) {
+      nav.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .home {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .home-info, .home-img {
+        width: 100%;
+      }
+
+      section {
+        padding: 60px 20px;
+      }
+
+      .img-box img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="logo">Portfolio</a>
+    <ul>
+      <li><a href="#Home" style="color:white">Home</a></li>
+      <li><a href="#About" style="color:white">About</a></li>
+      <li><a href="#Projects" style="color:white">Projects</a></li>
+      <li><a href="#Contact" style="color:white">Contact</a></li>
+      <li><a href="#Achievements" style="color:white">Achievements</a></li>
+    </ul>
+  </nav>
+
+  <div class="bars-animation">
+    <div class="bar" style="--i:6"></div>
+    <div class="bar" style="--i:5"></div>
+    <div class="bar" style="--i:4"></div>
+    <div class="bar" style="--i:3"></div>
+    <div class="bar" style="--i:2"></div>
+    <div class="bar" style="--i:1"></div>
+  </div>
+
+  <section id="Home" class="home">
+    <div class="home-info">
+      <h1>Nanda Kishan Choudary</h1>
+      <h2>The magic you are looking for is in the work you are avoiding.</h2>
+      <div class="btn-sci">
+        <div class="sci">
+          <a href="https://github.com/NandaKishanChoudary"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/nanda-kishan-choudary-a1435b334"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://www.instagram.com/nanda_kishan_choudary"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="mailto:nkchoudary27@gmail.com"><i class='bx bxl-gmail'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="nk-removebg.png" alt="Profile Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="About">
+    <h2>Nanda Kishan Choudary</h2>
+    <p>Namaskaram!<br>I was born in 2006 in Visakhapatnam. I completed my schooling in TIMPANY SCHOOL (ICSE) Visakhapatnam.<br>
+    Did my college (11th and 12th) in NARAYANA academy(CBSE).<br>
+    Right now I am an undergraduate in AMRITA VISHWA VIDYAPEETHAM.<br>
+    Since childhood I have been an enthusiast in experimenting and multitasking many things.<br><br></p>
+    <ul>
+      <p>The talents I have:</p>
+      <li>Music(Guitar and keyboard)</li>
+      <li>Abacus</li>
+      <li>Cricket</li>
+      <li>Skating</li><br>
+    </ul>
+    <ul>
+      <p>The languages I can speak are:</p>
+      <li>English</li>
+      <li>Telugu</li>
+      <li>Hindi</li>
+      <li>Oriya</li>
+    </ul><br>
+    <ul>
+      <p>The programming languages I know:</p>
+      <li>Python</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Java</li>
+    </ul>
+  </section>
+
+  <section id="Projects">
+    <h2>Projects</h2><br>
+    <p>Participated in the MUN talk held in my School</p>
+    <p>It is an initiative to help students simulate world-wide continental matters and to eliminate destruction and generate peace.</p><br>
+    <p>Also made a video on "SOLAR BULB BOTTLE MODEL" and got it published into a competition with the help of my teachers:</p><br><br>
+    <img src="https://content.instructables.com/FK5/2M6M/GTGCR130/FK52M6MGTGCR130.jpg?auto=webp" alt="Solar Bulb">
+  </section>
+
+  <section id="Contact">
+    <h2>Contact</h2>
+    <p>You can contact me in the following ways.</p>
+    <p>Mobile NO: 7416262006</p>
+    <p>Mail: nkchoudary27@gmail.com</p>
+    <div class="btn-sci">
+      <div class="sci">
+        <a href="https://github.com/NandaKishanChoudary"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/nanda-kishan-choudary-a1435b334"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.instagram.com/nanda_kishan_choudary"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="mailto:nkchoudary27@gmail.com"><i class='bx bxl-gmail'></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="Achievements">
+    <h2>Achievements</h2>
+    <p>There are a number of achievements:</p>
+    <p>I have been a "NATIONAL" champion in BrainoBrain Abacus Champion:</p>
+    <img src="abacusbg.png"><br>
+    <p>I have a professional degree in "ROCK SCHOOL" of music:</p><br>
+    <img src="rockbg.png"><br>
+    <p>I won many medals in district level of Skating:</p><br>
+    <img src="skatingbgg.png">
+  </section>
+
+</body>
+</html>
+
